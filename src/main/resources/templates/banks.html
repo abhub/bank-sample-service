@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bootifull Banks app </title>
+</head>
+<body>
+<h1> Banks Application powered by Clevermind</h1>
+
+<div th:each="b : ${banks}">
+
+    <div>
+        <b th:text="${b.id}">ID</b>
+        <span th:text="${b.bankName}"> Bank Name</span>
+        <span th:text="${b.location}"> Location</span>
+        <span th:text="${b.nbClient}"> Client number</span>
+    </div>
+
+</div>
+
+</body>
+</html>

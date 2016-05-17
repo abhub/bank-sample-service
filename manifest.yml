@@ -1,0 +1,7 @@
+---
+applications:
+- name: bank-sample-service-abhub
+  buildpack: java_buildpack
+  path: target/bank-sample-service-0.0.1-SNAPSHOT.jar
+  timeout: 60
+
